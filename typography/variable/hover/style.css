@@ -1,0 +1,147 @@
+/*
+See the README file for links on CSS animation
+*/
+
+@font-face {
+  font-family: 'Funkis';
+  src: url('FunkisMAUDemoGX.ttf');
+}
+
+@keyframes smaller{
+  0% {
+    font-size: 60px;
+    }
+    100% {
+    font-size: 40px;
+    }
+
+}
+@keyframes bigger{
+  0% {
+    font-size: 40px;
+    }
+    100% {
+    font-size: 60px;
+    }
+
+}
+@keyframes toButton1{
+  0% {
+    background-color: darkblue;
+    color: lightblue;
+    width: 220px;
+    height: 200px;
+    }
+    100% {
+      background-color: lightblue;
+      color: darkblue;
+      width: 450px;
+      height: 400px;
+    }
+
+}
+@keyframes toButton2{
+  0% {
+    background-color: lightblue;
+    color: darkblue;
+    width: 450px;
+    height: 400px;
+    }
+    100% {
+      background-color: darkblue;
+      color: lightblue;
+      width: 220px;
+      height: 200px;
+    }
+
+}
+
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 1em;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#button {
+  font-family: 'Funkis';
+  font-size: 6em;
+  text-rendering: geometricPrecision;
+  text-shadow: 0 0; /* a hack needed to improve rendering */
+  
+}
+#close{
+  
+  font-variation-settings: 'wght' 25 , 'term' 100, 'wdth' 0;
+}
+#close:hover{
+  animation-name: smaller;
+  animation-duration: 700ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+#close:active{
+  animation-name: toButton2;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  
+}
+#open  {
+  
+  font-variation-settings: 'wght' 2000 , 'term' 0, 'wdth' 0;
+}
+#open:hover{
+  animation-name: bigger;
+  animation-duration: 700ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+
+}
+#open:active{
+  animation-name: toButton1;
+  animation-duration: 300ms;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+}
+
+.button1 {
+  font-family: 'Funkis';
+  background-color: lightblue;
+  color: darkblue;
+  display: none;
+  border: none;
+  text-align: center;
+  width: 450px;
+  height: 400px;
+  font-size: 50px;
+}
+.button2{
+  font-family: 'Funkis';
+  background-color: darkblue;
+  color: lightblue;
+  display: block;
+  border: none;
+  text-align: center;
+  width: 220px;
+  height: 200px;
+  font-size: 50px;
+}
+
+
+
+
