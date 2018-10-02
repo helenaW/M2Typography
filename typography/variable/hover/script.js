@@ -14,8 +14,10 @@ function closing(e) {
 
   // Two keyframes: start and stop
   const keyframes = [
-    { fontVariationSettings: '\'wght\' 25, \'term\' 100, \'wdth\' 0' },
-    { fontVariationSettings: '\'wght\' 250,\'term\' 0, \'wdth\' 0' }
+    /*{ fontVariationSettings: '\'wght\' 25, \'term\' 100, \'wdth\' 0' },
+    { fontVariationSettings: '\'wght\' 250,\'term\' 0, \'wdth\' 0' }*/
+    { fontVariationSettings: ' \'term\' 100, \'wdth\' 0' },
+    { fontVariationSettings: '\'term\' 0, \'wdth\' 0' }
   ];
   // Set up some options so anim loops continuously
   const options = {
@@ -41,9 +43,13 @@ function opening(e) {
   //console.log('Animate second');
   var bu2 = document.getElementById("button2");
   const keyframes = [
-    { fontVariationSettings: '\'wght\' 200, \'term\' 0, \'wdth\' 0 ,\'inkt\' 0'
+    /*{ fontVariationSettings: '\'wght\' 200, \'term\' 0, \'wdth\' 0 ,\'inkt\' 0'
     },
     { fontVariationSettings: '\'wght\' 50, \'term\' 100, \'wdth\' 0, \'inkt\' 100'
+     }*/
+     { fontVariationSettings: ' \'term\' 0, \'wdth\' 0 ,\'inkt\' 0'
+    },
+    { fontVariationSettings: '\'term\' 100, \'wdth\' 0, \'inkt\' 100'
      }
   ];
   const options = {

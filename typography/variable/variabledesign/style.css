@@ -1,0 +1,63 @@
+/*
+See the README file for links on CSS animation
+*/
+
+@font-face {
+  font-family: 'Funkis';
+  src: url('FunkisMAUDemoGX.ttf');
+}
+
+
+
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 1em;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+#text {
+  font-family: 'Funkis';
+  font-size: 2em;
+  text-rendering: geometricPrecision;
+  text-shadow: 0 0; /* a hack needed to improve rendering */
+  
+}
+#distext{
+  margin-top:200px;
+  font-variation-settings: 'wght' 2000 , 'term' 100, 'wdth' 0, 'inkt'0, 'shrp'0, 'dots'0, 'wdth'0;
+}
+input[type=text] {
+  width: 50%;
+  height: 50px;
+  position: fixed;
+  top: 80px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+}
+button{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  position: fixed;
+  top: 140px;
+  color: white;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+

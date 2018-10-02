@@ -26,6 +26,7 @@ function update() {
     if (opacity > 1) opacity = opacity - 1.0;
 
     letter.style.opacity = opacity;
+    
   });
 
   counter += (Math.PI * 2) / 200;
