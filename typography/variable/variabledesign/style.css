@@ -33,7 +33,7 @@ body {
 }
 #distext{
   margin-top:200px;
-  font-variation-settings: 'wght' 2000 , 'term' 100, 'wdth' 0, 'inkt'0, 'shrp'0, 'dots'0, 'wdth'0;
+  font-variation-settings: 'wght' 100 , 'term' 0, 'wdth' 0, 'inkt'50, 'shrp'0, 'dots'0;
 }
 input[type=text] {
   width: 50%;

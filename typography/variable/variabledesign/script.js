@@ -15,16 +15,16 @@ function textTerm(e) {
     { fontVariationSettings: '\'term\' 0, \'wdth\' 0' }
 
     { fontVariationSettings: ' \'wght\' 200, \'wdth\' 0' },
-    { fontVariationSettings: '\'wght\' 20, \'wdth\' 0' }*/
+    { fontVariationSettings: '\'wght\' 20, \'wdth\' 0' }
 
-   /* { fontVariationSettings: ' \'shrp\' 100, \'wdth\' 0' },
-    { fontVariationSettings: '\'shrp\' 0, \'wdth\' 0' },
+    { fontVariationSettings: '\'term\' 100, \'shrp\' 100, \'wdth\' 0' },
+    { fontVariationSettings: '\'term\' 100, \'shrp\' 0, \'wdth\' 0' },
 
     { fontVariationSettings: ' \'dots\' 100, \'wdth\' 0' },
-    { fontVariationSettings: '\'dots\' 0, \'wdth\' 0' }
-*/
-    { fontVariationSettings: ' \'inkt\' 200, \'wdth\' 0' },
-    { fontVariationSettings: '\'inkt\' 0, \'wdth\' 0' }
+    { fontVariationSettings: '\'dots\' 0, \'wdth\' 0' }*/
+    
+    { fontVariationSettings: ' \'wght\' 100, \'inkt\' 200,\'term\' 50, \'wdth\' 0' },
+    { fontVariationSettings: '\'wght\' 100, \'inkt\' 0, \'term\' 50, \'wdth\' 0' },
 
     /*{ fontVariationSettings: ' \'wdth\' 0, \'term\' 100' },
     { fontVariationSettings: ' \'wdth\' 100, \'term\' 100' }*/
@@ -34,7 +34,7 @@ function textTerm(e) {
     iterations: Infinity,
     delay: 50,
     direction: 'alternate',
-    duration: 700,
+    duration: 1000,
     easing: 'ease-in-out'
   };
 

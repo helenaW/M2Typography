@@ -1,0 +1,157 @@
+/*
+See the README file for links on CSS animation
+*/
+
+@font-face {
+  font-family: 'Funkis';
+  src: url('FunkisMAUDemoGX.ttf');
+}
+
+html {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+  margin: 1em;
+  height: 100%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 6em;
+  text-rendering: geometricPrecision;
+  text-shadow: 0 0; /* a hack needed to improve rendering */
+  padding: 10px;
+}
+
+
+#lock{
+  font-family: 'Funkis';
+  background-color: white;
+  color: black;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  font-size: 40px;
+  font-variation-settings: 'wght' 100 , 'term' 100, 'wdth' 0;
+}
+#lock:hover{
+  animation-name: smaller;
+  animation-duration: 700ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+#lock:focus{
+  font-variation-settings: 'wght' 100 , 'term' 0, 'wdth' 0;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+#acti{
+  font-family: 'Funkis';
+  background-color: white;
+  color: black;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  font-size: 40px;
+  font-variation-settings: 'wght' 100, 'inktr' 100, 'term' 50, 'wdth' 0;
+  animation-name: weightAnim;
+  animation-duration: 1500ms;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+#acti:focus {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+  
+}
+@keyframes weightAnim {
+  0% {
+    font-variation-settings: 'wght' 100,'inkt' 100, 'term' 50, 'wdth' 0, 'shrp' 100, 'dots' 100;
+    
+  }
+  100% {
+    font-variation-settings: 'wght' 100,'inkt' 0, 'term' 0, 'wdth' 0, 'shrp' 0, 'dots' 0;
+    
+  }
+}
+#purch{
+  font-family: 'Funkis';
+  background-color: white;
+  color: black;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  font-size: 40px;
+  font-variation-settings: 'wght' 100, 'inktr' 100, 'term' 0, 'wdth' 0;
+  animation-name: purchaseMe;
+  animation-duration: 1000ms;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes purchaseMe {
+  0% {
+    font-variation-settings: 'wght' 100,'inkt' 100, 'term' 100, 'wdth' 0, 'shrp' 100, 'dots' 100;
+    
+  }
+  100% {
+    font-variation-settings: 'wght' 100,'inkt' 0, 'term' 0, 'wdth' 0, 'shrp' 0, 'dots' 0;
+    
+  }
+}
+
+
+
+#buy{
+  font-family: 'Funkis';
+  background-color:white;
+  color: black;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  font-size: 40px;
+  font-variation-settings: 'wght' 100, 'inktr' 100,'shrp' 10, 'wdth' 0;
+  animation-name: buyy;
+  animation-duration: 500ms;
+  animation-delay: 0;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+@keyframes buyy {
+  0% {
+    font-variation-settings: 'wght' 100,'inkt' 100, 'shrp' 10,'wdth' 0;
+    
+  }
+  100% {
+    font-variation-settings: 'wght' 100,'inkt' 0,'shrp' 0, 'wdth' 0;
+    
+  }
+}
+
+
+
