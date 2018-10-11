@@ -57,6 +57,78 @@ body {
   -webkit-animation-play-state: paused;
   animation-play-state: paused;
 }
+#log{
+  font-family: 'Funkis';
+  background-color: white;
+  color: black;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  font-size: 40px;
+  font-variation-settings: 'wght' 100 , 'term' 100, 'wdth' 0;
+}
+#log:hover{
+  animation-name: logIn;
+  animation-duration: 700ms;
+  animation-delay: 10ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+#log:focus{
+  font-variation-settings: 'wght' 100 , 'term' 0, 'wdth' 0, 'dots' 100;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+@keyframes logIn {
+  0% {
+    font-variation-settings: 'wght' 100,'inkt' 100, 'term' 100, 'wdth' 0, 'shrp' 100, 'dots' 0;
+    
+  }
+  100% {
+    font-variation-settings: 'wght' 100,'inkt' 0, 'term' 0, 'wdth' 0, 'shrp' 0, 'dots' 100;
+    
+  }
+}
+#mov{
+  font-family: 'Funkis';
+  background-color: white;
+  color: black;
+  display: block;
+  margin: 20px;
+  text-align: center;
+  width: 200px;
+  height: 120px;
+  font-size: 40px;
+  font-variation-settings: 'wght' 100 , 'term' 100, 'wdth' 0, 'shrp'100;
+}
+#mov:hover{
+  animation-name: move;
+  animation-duration: 1000ms;
+  animation-delay: 0ms;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: 1;
+  animation-direction: alternate;
+  animation-fill-mode: forwards;
+}
+#mov:focus{
+  font-variation-settings: 'wght' 100 , 'term' 0, 'wdth' 0, 'dots' 0;
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
+}
+@keyframes move {
+  0% {
+    font-variation-settings: 'wght' 100,'inkt' 100, 'term' 100, 'wdth' 0, 'shrp' 100, 'dots' 0;
+    
+  }
+  100% {
+    font-variation-settings: 'wght' 100,'inkt' 100, 'term' 0, 'wdth' 0, 'shrp' 0, 'dots' 0;
+    
+  }
+}
 #acti{
   font-family: 'Funkis';
   background-color: white;
